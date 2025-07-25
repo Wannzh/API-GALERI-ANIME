@@ -5,7 +5,7 @@ const port = 3000;
 const { dataAnime } = require('./objectFarid');
 
 app.get('/', (req, res) => {
-  res.send("API Galei Anime, Created by Farid");
+  res.send("API Galeri Anime, Created by Farid");
 });
 
 app.get('/api/anime', (req, res) => {
