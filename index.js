@@ -1,10 +1,14 @@
-const express = require('express');
-const cors = require('cors'); // ✅ Tambahkan ini
+// server.js
+const express = require("express");
+const cors = require("cors");
 const app = express();
 
-const { dataAnime } = require('./objectFarid');
+const apiData = require("./data");
+// console.log("Data dari data.js:", apiData )
+const PORT = process.env.PORT || 3000;
 
-app.use(cors()); // ✅ Pastikan ini dipanggil SETELAH cors diimpor
+app.use(cors()); // agar bisa diakses dari frontend
+app.use(express.json());
 
 app.get('/', (req, res) => {
   res.send("API Galeri Anime, Created by Farid");
@@ -25,7 +29,6 @@ app.get('/api/anime/:id', (req, res) => {
   res.json(anime);
 });
 
-const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}`);
 });
