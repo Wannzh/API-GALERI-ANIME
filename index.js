@@ -3,7 +3,7 @@ const express = require("express");
 const cors = require("cors");
 const app = express();
 
-const apiData = require("./objectFarid");
+const dataAnime = require("./objectFarid");
 // console.log("Data dari data.js:", apiData )
 const PORT = process.env.PORT || 3000;
 
