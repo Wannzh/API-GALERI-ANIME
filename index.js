@@ -2,7 +2,9 @@ const express = require('express');
 const app = express();
 const port = 3000;
 
+
 const { dataAnime } = require('./objectFarid');
+app.use(cors());
 
 app.get('/', (req, res) => {
   res.send("API Galeri Anime, Created by Farid");
