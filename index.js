@@ -3,8 +3,8 @@ const express = require("express");
 const cors = require("cors");
 const app = express();
 
-const dataAnime = require("./objectFarid");
-// console.log("Data dari data.js:", apiData )
+const apiData = require("./objectFarid");
+// console.log("Data dari objectFarid.js:", apiData)
 const PORT = process.env.PORT || 3000;
 
 app.use(cors()); // agar bisa diakses dari frontend
@@ -15,12 +15,12 @@ app.get('/', (req, res) => {
 });
 
 app.get('/api/anime', (req, res) => {
-  res.json(dataAnime);
+  res.json(apiData.dataAnime.anime);
 });
 
 app.get('/api/anime/:id', (req, res) => {
   const id = parseInt(req.params.id);
-  const anime = dataAnime.find(item => item.id === id);
+  const anime = apiData.dataAnime.anime.find(item => item.id === id);
 
   if (!anime) {
     return res.status(404).json({ message: "Anime tidak ditemukan" });

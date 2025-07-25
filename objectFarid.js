@@ -1,4 +1,5 @@
-const dataAnime = [
+const dataAnime = {
+    anime:[
     {
         id: 1,
         imageCover: "https://i.pinimg.com/1200x/b5/ff/d9/b5ffd97e39ddbd2ebeaa838b151ad35d.jpg",
@@ -3498,5 +3499,6 @@ const dataAnime = [
             ]
     },
 ]
+}
 
 module.exports = { dataAnime };
