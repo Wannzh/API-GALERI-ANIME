@@ -3397,7 +3397,7 @@ const dataAnime = {
                     {
                         characterName: 'Quotes Anime',
                         characterImage: {
-                            square: [
+                            potrait: [
                                 "https://i.pinimg.com/736x/cf/64/b9/cf64b93cde418b747744a99adb121c9d.jpg",
                                 "https://i.pinimg.com/736x/95/ac/e2/95ace24c40138862fb63e1800ad618db.jpg",
                                 "https://i.pinimg.com/736x/cc/03/67/cc03672d1408cd4371c2e4ea5a895a16.jpg",
